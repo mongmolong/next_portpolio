@@ -3,7 +3,8 @@ import Link from "next/link"
 import { useState } from "react";
 import Image from "next/image";
 import NavLink from "./NavLink";
-import { motion, stagger } from "framer-motion";
+// import { motion, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 
 const links = [
   { url: "/", title: "Home" },
@@ -12,7 +13,7 @@ const links = [
   { url: "/contact", title: "Contact" },
 ];
 
-const navbar = () => {
+const Navbar = () => {
   const [open, setOpen] = useState(false);
   const topVariants = {
     closed: {
@@ -128,4 +129,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar
